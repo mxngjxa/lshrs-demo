@@ -16,7 +16,6 @@ Projected Latency (1B scale): ~228 ms
 
 NOTE: To maintain <100ms at 1B scale, you would need to increase 'rows_per_band'
 to make buckets sparser, or distribute Redis across multiple nodes (Sharding).
-Done.
 
 ## Quick Start
 
