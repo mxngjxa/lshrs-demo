@@ -2,6 +2,22 @@
 
 This directory contains comprehensive Jupyter notebooks demonstrating LSHRS functionality with real-world scenarios and production-grade benchmarking.
 
+# Sample output for M3 MacBook Air running `temp.py`. 
+
+📊 Billion-Scale Projections (Single Node)
+==========================================
+Estimated Indexing Time: 321.7 hours (13.4 days)
+Required RAM (Vectors):  ~477 GB
+Required Redis Memory:   ~745 GB (Keys + Structures)
+
+Measuring Baseline Query Latency (at 1M scale)...
+Avg Latency (1M scale): 15.22 ms
+Projected Latency (1B scale): ~228 ms
+
+NOTE: To maintain <100ms at 1B scale, you would need to increase 'rows_per_band'
+to make buckets sparser, or distribute Redis across multiple nodes (Sharding).
+Done.
+
 ## Quick Start
 
 ### Prerequisites
